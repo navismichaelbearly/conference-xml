@@ -9,7 +9,8 @@
 
     <bean name="speakerService"
             class="in.bearly.service.SpeakerServiceImpl">
-        <property name="speakerRepository" ref="speakerRepository"/>
+        <!--<property name="speakerRepository" ref="speakerRepository"/>-->
+        <constructor-arg index="0" ref="speakerRepository"></constructor-arg>
     </bean>
 
 </beans>
