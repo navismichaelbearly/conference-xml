@@ -8,9 +8,9 @@
           class="in.bearly.repository.HibernateSpeakerRepositoryImpl" />
 
     <bean name="speakerService"
-            class="in.bearly.service.SpeakerServiceImpl">
+            class="in.bearly.service.SpeakerServiceImpl" autowire="byName">
         <!--<property name="speakerRepository" ref="speakerRepository"/>-->
-        <constructor-arg index="0" ref="speakerRepository"></constructor-arg>
+        <!--<constructor-arg index="0" ref="speakerRepository"></constructor-arg>-->
     </bean>
 
 </beans>
